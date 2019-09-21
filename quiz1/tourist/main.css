@@ -1,0 +1,65 @@
+body {
+    background-image: url("images/BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+@font-face {
+    font-family: custom;
+    src: url(assets/CaviarDreams_Bold.woff);
+}
+h1 {
+    color:white;
+    font-family: custom;
+    font-size: 200px;
+    text-align: center;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1s;
+
+}
+p {
+    color:white;
+    font-family: custom;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    position: relative;
+	animation-name: p;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+div.place1 {
+    position: relative;
+    left:600px;
+}
+div.place2 {
+    position: relative;
+    left:1000px;
+    top:-250px;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes p {
+	0% {
+        opacity: 0;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+        top:-80px;
+    }
+}
